@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>wtms-app-h5</title>
+</head>
+<script type="text/javascript"
+  src="https://webapi.amap.com/maps?v=1.4.10&key=1c6fa8ef70e652c9198aac260a749eac&plugin=AMap.Geocoder,AMap.TruckDriving">
+</script>
+
+<body>
+  <noscript>
+    <strong>We're sorry but wtms-app-h5 doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <script>
+    var deviceWidth = Math.ceil(document.documentElement.clientWidth);
+    if (deviceWidth > 800) deviceWidth = 800;
+    document.documentElement.style.fontSize = Math.ceil(deviceWidth / 3.75) + 'px'
+    var fz = deviceWidth/3.75
+    var realfz = ~~(+window.getComputedStyle(document.documentElement).fontSize.replace('px', '') *
+      10000) / 10000
+    if (Math.ceil(fz) !== realfz) {
+      document.documentElement.style.fontSize =  Math.ceil(fz * (fz / realfz)) + 'px';
+    }
+
+
+   
+  </script>
+</body>
+
+</html>

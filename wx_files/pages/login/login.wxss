@@ -1,0 +1,190 @@
+@import "../../wxParse/wxParse.wxss";
+
+.container {
+  background: linear-gradient(0deg, rgba(238, 68, 80, 1) 0%, rgba(250, 116, 117, 1) 100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  text-align: center;
+}
+
+.login_box {
+  position: relative;
+  width: 590rpx;
+  height: 660rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: 130rpx;
+  overflow: auto;
+}
+.login_box .btn{
+  width:460rpx;
+height:70rpx;
+background:linear-gradient(90deg,rgba(244,18,34,1),rgba(237,63,62,1),rgba(255,94,96,1));
+border-radius:35rpx;
+margin: 0 auto;
+margin-top: 50rpx;
+font-size:30rpx;
+font-family:PingFangSC-Regular;
+letter-spacing:10rpx;
+color:rgba(255,255,255,1);
+line-height: 70rpx;
+}
+.login_box .register{
+  text-align: center;
+    font-size:30rpx;
+    color:rgba(153,153,153,1);
+    margin-top: 50rpx;
+}
+.register_red{
+
+color:#F96B4B;
+}
+.logo_company {
+  position: absolute;
+  top: 40rpx;
+  width: 160rpx;
+  height: 160rpx;
+  background: #FA7475;
+  border: 5rpx solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -80rpx;
+  z-index: 9999;
+}
+
+.logo_company image {
+  height: 100%;
+  width: 100%;
+}
+.login_box input{
+  margin: 0 auto;
+  margin-top: 22rpx;
+  width:460rpx;
+height:70rpx;
+background:rgba(255,255,255,1);
+border:1rpx solid rgba(220,220,220,1);
+border-radius:10rpx;
+text-align: left;
+padding-left:30rpx;
+box-sizing: border-box;
+}
+.login_box .login_name{
+  margin-top:160rpx;
+}
+.Keep_passwords_box{
+  width:460rpx;
+height:50rpx;
+background:#fff;
+margin: 0 auto;
+margin-top:30rpx;
+}
+.Keep_passwords_box_item{
+  width:50%;
+  text-align: left;
+ display: inline-block;
+}
+.Keep_passwords_box_item_r{
+ width:50%;
+  text-align: right;
+ font-size:30rpx;
+font-family:PingFangSC-Regular;
+font-weight:400;
+color:rgba(249,107,75,1);
+  display: inline-block;
+}
+.Keep_passwords_box_item{
+ font-size:30rpx;
+font-family:PingFangSC-Regular;
+font-weight:400;
+color:rgba(249,107,75,1);
+
+} 
+.Keep_passwords_box_item text{
+vertical-align: -2.5rpx;
+}
+.Keep_passwords_box_item checkbox .wx-checkbox-input {
+  width: 25rpx;
+  height: 25rpx;
+  border:1rpx solid rgba(249,107,75,1);
+}
+/*checkbox选中后样式  */
+.Keep_passwords_box_item checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #FF525C;
+}
+/*checkbox选中后图标样式  */
+.Keep_passwords_box_item checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 20rpx;
+  height: 20rpx;
+  line-height: 20rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+.Fast_load {
+  height: 180rpx;
+  width: 360rpx;
+  /* background: #fff; */
+  margin: 0 auto;
+  margin-top: 80rpx;
+}
+
+.bottom_border {
+  width: 360rpx;
+  height: 1rpx;
+  background: rgba(255, 255, 255, 1);
+  opacity: 0.4;
+  margin-top: 30rpx;
+}
+
+.Fast_load_item {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -18rpx;
+  width: 120rpx;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: bold;
+  background: #f14e58;
+  z-index: 999;
+  color: rgba(255, 255, 255, 1);
+}
+
+.login_weixin {
+  margin-top: 40rpx;
+}
+.wid_530{
+  width:530rpx;
+height:25rpx;
+background:rgba(255,255,255,1);
+opacity:0.7;
+border-radius:10rpx;
+ margin: 0 auto;
+  margin-top: -10rpx;
+}
+.wid_480{
+  width:480rpx;
+height:25rpx;
+background:rgba(255,255,255,1);
+opacity:0.3;
+border-radius:10rpx;
+ margin: 0 auto;
+  margin-top: -10rpx;
+}
+.wid_430{
+  width:430rpx;
+height:25rpx;
+background:rgba(255,255,255,1);
+opacity:0.1;
+border-radius:10rpx;
+ margin: 0 auto;
+  margin-top: -10rpx;
+}

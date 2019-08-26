@@ -1,0 +1,785 @@
+//<<<<<<< HEAD
+/*
+ * @Description: In User Settings Edit
+ * @Author: sailei
+ * @Date: 2018-12-14 11:38:59
+ */
+//$red: rgba(227, 29, 43, 1);
+//$green: rgba(0, 180, 42, 1);
+//$orange: rgba(255, 127, 0, 1);
+//$blue: rgba(111, 145, 237, 1);
+//$purple: rgba(158, 86, 235, 1);
+//$sky: rgba(29, 136, 227, 1);
+//
+//@mixin tabbar($parwid, $childwid) {
+//  width: 100vw;
+//  height: .54rem;
+//  overflow: hidden;
+//  position: relative;
+//  z-index: 2;
+//  background: #fff;
+//  .tabbarBox {
+//      box-sizing: border-box;
+//      width: $parwid;
+//      height: .33rem;
+//      margin: .11rem auto;
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//      border: 1px solid $red;
+//      border-radius: .05rem;
+//
+//      .tab {
+//          display: inline-block;
+//          width: $childwid;
+//          height: .33rem;
+//          line-height: .33rem;
+//          text-align: center;
+//          border-radius: .05rem;
+//          font-size: .16rem;
+//          @include slim-font();
+//          color: $red;
+//      }
+//
+//      .activeTab {
+//          background: $red;
+//          @include normal-font();
+//          color: rgba(255, 255, 255, 1);
+//      }
+//  }
+//}
+//
+//@mixin input-panel($wid) {
+//  box-sizing: border-box;
+//  width: $wid;
+//  height: .32rem;
+//  line-height: .32rem;
+//  padding-left: .1rem;
+//  border: 1px solid rgba(192, 192, 192, 1);
+//  border-radius: .05rem;
+//}
+//
+//@mixin slim-font {
+//  font-weight: 400;
+//  font-family: PingFangSC-Regular;
+//}
+//
+//@mixin normal-font {
+//  font-weight: 500;
+//  font-family: PingFangSC-Medium;
+//}
+//
+//@mixin flex($dir) {
+//  display: flex;
+//  flex-flow: $dir nowrap;
+//}
+//
+//@mixin peddingBtn($wid) {
+//  display: inline-block;
+//  width: $wid;
+//  height: .32rem;
+//  line-height: .32rem;
+//  text-align: center;
+//  background: $red;
+//  font-size: .15rem;
+//  color:rgba(255,255,255,1);
+//  border-radius: .05rem;
+//  @include normal-font()
+//}
+//
+//@mixin redPanel($wid) {
+//  display: inline-block;
+//  width: $wid;
+//  height: .32rem;
+//  line-height: .32rem;
+//  text-align: center;
+//  background:rgba(255,236,236,1);
+//  border: 1px solid $red;
+//  border-radius: .05rem;
+//  color: $red;
+//  @include normal-font();
+//}
+//
+//@mixin takePhotoPanel($wid) {
+//  display: inline-block;
+//  width: $wid;
+//  height: .32rem;
+//  line-height: .32rem;
+//  text-align: center;
+//  background-color:rgba(249,249,249,1);
+//  background-repeat: no-repeat;
+//  background-position: center center;
+//  background-size: .24rem .2rem;
+//  border:1px solid rgba(192, 192, 192, 1);
+//  border-radius: .05rem;
+//
+//}
+//
+//.red {
+//  color: $red;
+//  @include normal-font();
+//}
+//
+//.black {
+//  color: rgba(51,51,51,1);;
+//  @include normal-font();
+//}
+//
+//.green {
+//  color: $green;
+//  @include normal-font();
+//}
+//
+//.orange {
+//  color: $orange;
+//  @include normal-font();
+//}
+//
+//.blue {
+//  color: $blue;
+//  @include normal-font();
+//}
+//
+//.purple {
+//  color: $purple;
+//  @include normal-font();
+//}
+//
+//.sky {
+//  color: $sky;
+//  @include normal-font();
+//}
+//
+//.redBtn{
+//  background: $red;
+//}
+//
+//.greenBtn{
+//  background: $green;
+//}
+//
+//.orangeBtn{
+//  background: $orange;
+//}
+//.greenBtner{
+//  background: $green;
+//}
+//
+//.bgGray{
+//  background:rgba(241,241,240,1);
+//}
+//
+//.swiper-container {
+//  position: absolute;
+//  top: 0;
+//  width: 100vw;
+//  height: 100vh;
+//}
+//
+//.common-page-flex {
+//  @include flex(column);
+//  justify-content: space-between;
+//  width: 100%;
+//  height: 100%;
+//}
+//
+////少了1像素,改名字太麻烦就不改了吧
+//.pdTop115{
+//  padding-top: 1.14rem;
+//}
+//
+//.common-content-box {
+//  padding-left: .17rem;
+//  padding-right: .17rem;
+//  flex-grow: 1;
+//  overflow-y: scroll;
+//
+//  li {
+//      @include flex(row);
+//      align-items: center;
+//      width: 100%;
+//      border-bottom: 1px solid rgba(236, 236, 236, 1);
+//
+//      div {
+//          @include flex(row);
+//          align-items: center;
+//          justify-content: center;
+//          height: .46rem;
+//          text-align: center;
+//          font-size: .16rem;
+//          word-break: break-all;
+//      }
+//
+//      div:first-of-type img {
+//          width: .16rem;
+//          height: .16rem;
+//      }
+//  }
+//}
+//.common-content-contents{
+//  position: absolute;
+// top:2.5rem;
+// bottom:.5rem;
+// overflow: auto;
+//}
+//.common-bottom-button {
+//  width: 100vw;
+//  height: .5rem;
+//  line-height: .5rem;
+//  text-align: center;
+//  background: $red;
+//  font-size: .19rem;
+//  color: rgba(255, 255, 255, 1);
+//  span{
+//      display: inline-block;
+//      width: 50%;
+//      height: .5rem;
+//      line-height: .5rem;
+//      text-align: center;
+//  }
+//}
+//
+//.bottom-button-fixed{
+//  position: fixed;
+//  left: 0;
+//  bottom: 0;
+//  z-index: 3;
+//}
+//
+//.common-content-title {
+//  @include normal-font();
+//  color: rgba(0, 0, 0, 1);
+//}
+//
+//.common-line-one-panel{
+//  padding-left: .16rem;
+//  padding-right: .16rem;
+//  font-size: .15rem;
+//  position: relative;
+//  @include slim-font();
+//  p{
+//      @include flex(row);
+//      align-items: center;
+//      width: 100%;
+//      height: .46rem;
+//      border-bottom: 1px solid rgba(236,236,236,1);
+//      span{
+//          display: block;
+//      }
+//      span:first-of-type{
+//          padding-left: .1rem;
+//      }
+//  }
+//}
+//
+//.common-line-two-panel{
+//  padding-left: .16rem;
+//  padding-right: .16rem;
+//  font-size: .15rem;
+//  @include flex(row);
+//  @include slim-font();
+//  p{
+//      width: 50%;
+//      height: .46rem;
+//      line-height: .46rem;
+//      border-bottom: 1px solid rgba(236,236,236,1);
+//      span:first-of-type{
+//          padding-left: .1rem;
+//      }
+//  }
+//}
+//.red {
+//  color: rgba(227, 29, 43, 1);
+//}
+//
+//.redBtn {
+//  display: inline-block;
+//  width: .5rem;
+//  height: .31rem;
+//  line-height: .31rem;
+//  text-align: center;
+//  color: rgba(227, 29, 43, 1);
+//  background: rgba(255, 236, 236, 1);
+//  border: 1px solid rgba(227, 29, 43, 1);
+//  border-radius: .05rem;
+//}
+//.greenBtn {
+//  display: inline-block;
+//  width: .5rem;
+//  height: .31rem;
+//  line-height: .31rem;
+//  text-align: center;
+//  color: #00b42a;
+//  background: rgba(235,255,238, 1);
+//  border: 1px solid #00b42a;
+//  border-radius: .05rem;
+//}
+//.orgBtn {
+//  display: inline-block;
+//  width: .5rem;
+//  height: .31rem;
+//  line-height: .31rem;
+//  text-align: center;
+//  color: rgba(255, 127, 0, 1);
+//  background: rgba(254,246,237,1);
+//  border: 1px solid rgba(255, 127, 0, 1);
+//  border-radius: .05rem;
+//}
+//.yellow {
+//  color: rgba(255, 127, 0, 1);
+//}
+//
+//.yellowBtn {
+//  display: inline-block;
+//  width: .5rem;
+//  height: .31rem;
+//  line-height: .31rem;
+//  text-align: center;
+//  color: rgba(255, 150, 45, 1);
+//  background: rgba(255,251,230, 1);
+//  border: 1px solid rgba(255, 150, 45, 1);
+//  border-radius: .05rem;
+//}
+//.selecter {
+//  width: .6rem;
+//  height: .31rem;
+//  background: rgba(255, 255, 255, 1);
+//  border: 1px solid rgba(192, 192, 192, 1);
+//  border-radius: .05rem;
+//  font-size: .15rem;
+//  font-family: PingFangSC-Medium;
+//  color: rgba(227, 29, 43, 1);
+//}
+//.selectBox{
+//  position: relative;
+//}
+//.selectBox input{
+//  width: 100%;
+//}
+//.selectBox img{
+//  position: absolute;
+//  top: 0;
+//  bottom: 0;
+//  right: .05rem;
+//  margin: auto;
+//  width: .11rem;
+//  height: .06rem;
+//}
+//.wid90 {
+//  width: .9rem;
+//  margin: 0 auto;
+//}
+//.wid60 {
+//  width: .7rem;
+//  margin: 0 auto;
+//}
+//.bgShu {
+//  background: url(/assets/images/common/shu.png) no-repeat left;
+//  background-size: 1px .15rem;
+//=======
+/*
+ * @Description: In User Settings Edit
+ * @Author: sailei
+ * @Date: 2018-12-14 11:38:59
+ */
+$red: rgba(227, 29, 43, 1);
+$green: rgba(0, 180, 42, 1);
+$orange: rgba(255, 127, 0, 1);
+$blue: rgba(111, 145, 237, 1);
+$purple: rgba(158, 86, 235, 1);
+$sky: rgba(29, 136, 227, 1);
+
+@mixin tabbar($parwid, $childwid) {
+    width: 100vw;
+    height: .54rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    .tabbarBox {
+        box-sizing: border-box;
+        width: $parwid;
+        height: .33rem;
+        margin: .11rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $red;
+        border-radius: .05rem;
+
+        .tab {
+            display: inline-block;
+            width: $childwid;
+            height: .33rem;
+            line-height: .33rem;
+            text-align: center;
+            border-radius: .05rem;
+            font-size: .16rem;
+            @include slim-font();
+            color: $red;
+        }
+
+        .activeTab {
+            background: $red;
+            @include normal-font();
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+@mixin input-panel($wid) {
+    box-sizing: border-box;
+    width: $wid;
+    height: .32rem;
+    line-height: .32rem;
+    padding-left: .1rem;
+    border: 1px solid rgba(192, 192, 192, 1);
+    border-radius: .05rem;
+}
+
+@mixin slim-font {
+    font-weight: 400;
+    font-family: PingFangSC-Regular;
+}
+
+@mixin normal-font {
+    font-weight: 500;
+    font-family: PingFangSC-Medium;
+}
+
+@mixin flex($dir) {
+    display: flex;
+    flex-flow: $dir nowrap;
+}
+
+@mixin peddingBtn($wid) {
+    display: inline-block;
+    width: $wid;
+    height: .32rem;
+    line-height: .32rem;
+    text-align: center;
+    background: $red;
+    font-size: .15rem;
+    color:rgba(255,255,255,1);
+    border-radius: .05rem;
+    @include normal-font()
+}
+
+@mixin redPanel($wid) {
+    display: inline-block;
+    width: $wid;
+    height: .32rem;
+    line-height: .32rem;
+    text-align: center;
+    background:rgba(255,236,236,1);
+    border: 1px solid $red;
+    border-radius: .05rem;
+    color: $red;
+    @include normal-font();
+}
+
+@mixin takePhotoPanel($wid) {
+    display: inline-block;
+    width: $wid;
+    height: .32rem;
+    line-height: .32rem;
+    text-align: center;
+    background-color:rgba(249,249,249,1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: .24rem .2rem;
+    border:1px solid rgba(192, 192, 192, 1);
+    border-radius: .05rem;
+
+}
+
+.red {
+    color: $red;
+    @include normal-font();
+}
+
+.black {
+    color: rgba(51,51,51,1);;
+    @include normal-font();
+}
+
+.green {
+    color: $green;
+    @include normal-font();
+}
+
+.orange {
+    color: $orange;
+    @include normal-font();
+}
+
+.blue {
+    color: $blue;
+    @include normal-font();
+}
+
+.purple {
+    color: $purple;
+    @include normal-font();
+}
+
+.sky {
+    color: $sky;
+    @include normal-font();
+}
+
+.redBtn{
+    background: $red;
+}
+
+.greenBtn{
+    background: $green;
+}
+
+.orangeBtn{
+    background: $orange;
+}
+.greenBtner{
+    background: $green;
+}
+
+.bgGray{
+    background:rgba(241,241,240,1);
+}
+
+.swiper-container {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.common-page-flex {
+    @include flex(column);
+    justify-content: space-between;
+    width: 100vw;
+    height: 100%;
+}
+
+//少了1像素,改名字太麻烦就不改了吧
+.pdTop115{
+    padding-top: 1.14rem;
+}
+
+.common-content-box {
+    padding-left: .17rem;
+    padding-right: .17rem;
+    flex-grow: 1;
+    overflow-y: scroll;
+
+    li {
+        @include flex(row);
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid rgba(236, 236, 236, 1);
+
+        div {
+            @include flex(row);
+            align-items: center;
+            justify-content: center;
+            height: .46rem;
+            text-align: center;
+            font-size: .16rem;
+            word-break: break-all;
+        }
+
+        div:first-of-type img {
+            width: .16rem;
+            height: .16rem;
+        }
+    }
+}
+.common-content-contents{
+    position: absolute;
+   top:2.5rem;
+   bottom:.5rem;
+   overflow: auto;
+}
+.common-bottom-button {
+    width: 100vw;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    background: $red;
+    font-size: .19rem;
+    color: rgba(255, 255, 255, 1);
+    span{
+        display: inline-block;
+        width: 50%;
+        height: .5rem;
+        line-height: .5rem;
+        text-align: center;
+    }
+}
+
+.bottom-button-fixed{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.common-content-title {
+    @include normal-font();
+    color: rgba(0, 0, 0, 1);
+}
+
+.common-line-one-panel{
+    padding-left: .16rem;
+    padding-right: .16rem;
+    font-size: .15rem;
+    position: relative;
+    @include slim-font();
+    p{
+        @include flex(row);
+        align-items: center;
+        width: 100%;
+        height: .46rem;
+        border-bottom: 1px solid rgba(236,236,236,1);
+        span{
+            display: block;
+        }
+        span:first-of-type{
+            padding-left: .1rem;
+        }
+    }
+}
+
+.common-line-two-panel{
+    padding-left: .16rem;
+    padding-right: .16rem;
+    font-size: .15rem;
+    @include flex(row);
+    @include slim-font();
+    p{
+        width: 50%;
+        height: .46rem;
+        line-height: .46rem;
+        border-bottom: 1px solid rgba(236,236,236,1);
+        span:first-of-type{
+            padding-left: .1rem;
+        }
+    }
+}
+.red {
+    color: rgba(227, 29, 43, 1);
+}
+
+.redBtn {
+    display: inline-block;
+    width: .5rem;
+    height: .31rem;
+    line-height: .31rem;
+    text-align: center;
+    color: rgba(227, 29, 43, 1);
+    background: rgba(255, 236, 236, 1);
+    border: 1px solid rgba(227, 29, 43, 1);
+    border-radius: .05rem;
+}
+.grayBtn {
+    display: inline-block;
+    width: .5rem;
+    height: .31rem;
+    line-height: .31rem;
+    text-align: center;
+    color: #333333;
+    background: #F9F9F9;
+    border: 1px solid #C0C0C0;
+    border-radius: .05rem;
+}
+.greenBtn {
+    display: inline-block;
+    width: .5rem;
+    height: .31rem;
+    line-height: .31rem;
+    text-align: center;
+    color: #00b42a;
+    background: rgba(235,255,238, 1);
+    border: 1px solid #00b42a;
+    border-radius: .05rem;
+}
+.orgBtn {
+    display: inline-block;
+    width: .5rem;
+    height: .31rem;
+    line-height: .31rem;
+    text-align: center;
+    color: rgba(255, 127, 0, 1);
+    background: rgba(254,246,237,1);
+    border: 1px solid rgba(255, 127, 0, 1);
+    border-radius: .05rem;
+}
+.yellow {
+    color: rgba(255, 127, 0, 1);
+}
+
+.yellowBtn {
+    display: inline-block;
+    width: .5rem;
+    height: .31rem;
+    line-height: .31rem;
+    text-align: center;
+    color: rgba(255, 150, 45, 1);
+    background: rgba(255,251,230, 1);
+    border: 1px solid rgba(255, 150, 45, 1);
+    border-radius: .05rem;
+}
+.selecter {
+    width: .6rem;
+    height: .31rem;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(192, 192, 192, 1);
+    border-radius: .05rem;
+    font-size: .15rem;
+    font-family: PingFangSC-Medium;
+    color: rgba(227, 29, 43, 1);
+}
+.selectBox{
+    position: relative;
+}
+.selectBox input{
+    width: 100%;
+}
+.selectBox img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: .03rem;
+    margin: auto;
+    width: .11rem;
+    height: .06rem;
+}
+.wid90 {
+    width: .9rem;
+    margin: 0 auto;
+}
+.wid95 {
+    width: .95rem;
+    margin: 0 auto;
+}
+.wid70 {
+    width: .70rem;
+    margin: 0 auto;
+}
+.wid75 {
+    width: .75rem;
+    margin: 0 auto;
+}
+.wid35 {
+    width: .35rem;
+    margin: 0 auto;
+}
+.wid60 {
+    width: .7rem;
+    margin: 0 auto;
+}
+.bgShu {
+    background: url(/assets/images/common/shu.png) no-repeat left;
+    background-size: 1px .15rem;
+//>>>>>>> 6a2ad1cb55849b1fb6fa4c0b88e0d87a1f466f4a
+}

@@ -1,0 +1,161 @@
+<!--
+<import src="../../wxParse/wxParse.wxml" />
+<import src="../../templates/header.wxml" />
+<import src="../../templates/copyright.wxml" />
+<import src="../../templates/login-popup.wxml" />
+
+<view class="container" style="display:{{display}}">
+    <template is="tempHeader" />
+
+    <view class="wrapper">
+        <view class="excerpt">
+             //<rich-text nodes="{{pageData.content.rendered}}"></rich-text> 
+            <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+
+        </view>
+ <template is="login-popup" data="{{show: isLoginPopup, userInfo: userInfo}}"></template>
+     
+        <view style='text-align:center'>
+            <button class="gotowebpage-button" formType="submit" size="mini" bindtap="gotowebpage">打开“守望轩”网站</button>
+            <modal title="{{dialog.title}}" hidden="{{dialog.hidden}}" no-cancel bindconfirm="confirm">{{dialog.content}}</modal>
+        </view>
+        <view class="praisePost">
+            <view style='text-align:center'>
+                <button class="praise-button" formType="submit" size="mini" bindtap="praise">捐赠</button>
+
+                <modal title="{{dialog.title}}" hidden="{{dialog.hidden}}" no-cancel bindconfirm="confirm">{{dialog.content}}</modal>
+            </view>
+            <view class="praiseTitle">
+                <view style='margin-top: 15rpx;'>
+                    <text>谢谢以下鼓励或捐赠的朋友</text>
+                </view>
+            </view>
+            <view class="praiseText">
+                <block wx:key="id" wx:for="{{praiseList}}">
+                    <image src="{{item}}" class="gravatarLikeImg"></image>
+                </block>
+            </view>
+        </view>
+    </view>
+   
+      <view class="copyright">
+        <template is="tempCopyright" />
+    </view>
+
+</view> -->
+
+<view class="container_box">
+  <view class="container_box_info">
+    <view class="container_box_in">
+      <view class="container_pic">
+        <image src="../../images/nav-icon5.png"></image>
+      </view>
+      <view class="container_info">
+        <view class="container_info_name">无敌王三岁</view>
+        <view class="container_info_logo">合伙人</view>
+      </view>
+    </view>
+  </view>
+  <view class="container">
+    <view class="invitation_reward">
+      <text>
+        查看您邀请的推广员以及奖励 
+      </text>
+      <text class="arrow">》</text>
+    </view>
+    <view class="invitation_data">
+      <view class="invitation_add">
+        <view class="invitation_add_num">
+          2395.3
+        </view>
+        <view class="invitation_add_text">
+          累计销售(元)
+        </view>
+      </view>
+      <view class="invitation_flx">
+        <view class="invitation_flx_item">
+          销售额还差
+          <text> 666.66 </text> 元即可获得奖励
+        </view>
+      </view>
+      <view class="invitation_list">
+        <view class="invitation_list_item">
+          <view class="list_item_num">
+            735
+          </view>
+          <view class="list_item_tit">
+            今日收入
+          </view>
+        </view>
+        <view class="invitation_list_item">
+          <view class="list_item_num">
+            735
+          </view>
+          <view class="list_item_tit">
+            今日支出
+          </view>
+        </view>
+        <view class="invitation_list_item">
+          <view class="list_item_num">
+            735
+          </view>
+          <view class="list_item_tit">
+            今日利润
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="my_service">
+      <view class="my_service_top">
+        我的服务
+      </view>
+      <view class="my_service_list">
+        <view class="my_service_list_item">
+          <view class="my_service_list_item_pic">
+            <image src="../../images/nav-icon4.png"></image>
+          </view>
+          <view class="my_service_list_item_name">
+            盘点
+          </view>
+        </view>
+        <view class="my_service_list_item">
+          <view class="my_service_list_item_pic">
+            <image src="../../images/nav-icon1.png"></image>
+          </view>
+          <view class="my_service_list_item_name">
+            销量
+          </view>
+        </view>
+        <view class="my_service_list_item">
+          <view class="my_service_list_item_pic">
+            <image src="../../images/nav-icon2.png"></image>
+          </view>
+          <view class="my_service_list_item_name">
+            冰箱
+          </view>
+        </view>
+        <view class="my_service_list_item">
+          <view class="my_service_list_item_pic">
+            <image src="../../images/nav-icon3.png"></image>
+          </view>
+          <view class="my_service_list_item_name">
+            货架
+          </view>
+        </view>
+        <view class="my_service_list_item">
+          <view class="my_service_list_item_pic">
+            <image src="../../images/nav-icon5.png"></image>
+          </view>
+          <view class="my_service_list_item_name">
+            堆头
+          </view>
+        </view>
+
+      </view>
+      
+    </view>
+    <view class="invitation_go">
+        <image src="{{image_photo}}" bindtap="cameraTy"></image>
+      </view>
+  </view>
+</view>
